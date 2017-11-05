@@ -15,7 +15,7 @@ public class SurvivorController : MonoBehaviour {
     [SerializeField]
     private GameObject spawnPoint;
 
-
+   
 
     private Quaternion screenMovementSpace;
     private Vector3 screenMovementForward;
@@ -29,8 +29,15 @@ public class SurvivorController : MonoBehaviour {
         foreach (GameObject item in GameObject.FindGameObjectsWithTag("Survivor"))
         {
             AddSurvivor(item);
+            if (selectedSurvivor == null)
+            {
+                selectedSurvivor = item;
+                selectedMotor = selectedSurvivor.GetComponent<SurvivorMovement>();
+
+            }
 
         };
+        
 	}
 
     void Start()
