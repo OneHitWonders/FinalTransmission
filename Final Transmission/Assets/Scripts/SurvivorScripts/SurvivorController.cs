@@ -83,6 +83,7 @@ public class SurvivorController : MonoBehaviour {
                 {
                     selectedSurvivor = hit.transform.gameObject; // gets the hit Gameobject and sets as selected
                     selectedMotor = selectedSurvivor.GetComponent<SurvivorMovement>();
+                    selectedSurvivor.GetComponent<SurvivorMovement>().isSelected = true;
                     Debug.Log("select");
                 }
             }

@@ -520,7 +520,6 @@ GameObject:
   - component: {fileID: 95256968829375890}
   - component: {fileID: 54210822182856858}
   - component: {fileID: 136466930612391282}
-  - component: {fileID: 195076422023984452}
   - component: {fileID: 114991698625825806}
   - component: {fileID: 114338963608592284}
   m_Layer: 0
@@ -2185,7 +2184,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1483880953663358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 356.49625, y: -155.61, z: 253.74048}
+  m_LocalPosition: {x: 356.49625, y: -156.91, z: 253.74048}
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
   - {fileID: 4320065626451120}
@@ -2205,7 +2204,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2240,13 +2239,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   survivorBody: {fileID: 0}
-  walkSpeed: 5
-  walkingSnap: 50
+  controller: {fileID: 0}
+  walkSpeed: 20
+  walkingSnap: 60
   turningSmoothing: 0.5
   movementDirection: {x: 0, y: 0, z: 0}
   offset_X: 0
   offset_Y: 0
   offset_Z: 0
+  isSelected: 0
 --- !u!114 &114991698625825806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2676,24 +2677,3 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000000024214387, y: 0.8285172, z: 0.056545347}
     m_Extent: {x: 0.046305113, y: 0.01224187, z: 0.0089785475}
   m_DirtyAABB: 0
---- !u!195 &195076422023984452
-NavMeshAgent:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1483880953663358}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4

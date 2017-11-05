@@ -7,6 +7,7 @@ public class SurvivorMovement : MonoBehaviour {
     [HideInInspector]
     public Rigidbody survivorBody;
 
+    public SurvivorController controller;
 
     #region Movement
     //MovementVariables
@@ -24,7 +25,7 @@ public class SurvivorMovement : MonoBehaviour {
     public float offset_Z;
     Camera main;
 
-
+    public bool isSelected= false;
 
     #endregion
 
@@ -33,6 +34,7 @@ public class SurvivorMovement : MonoBehaviour {
     // Use this for initialization
     void Awake () {
         survivorBody = gameObject.GetComponent<Rigidbody>();
+        controller = GameObject.Find("GameController").GetComponent<SurvivorController>();
     }
 
     // Update is called once per frame
@@ -47,7 +49,7 @@ public class SurvivorMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (survivorBody != null)
+        if (isSelected == true)
         {
             Vector3 targetVelocity = movementDirection * walkSpeed;
             Vector3 deltaVelocity = targetVelocity - survivorBody.velocity;
@@ -68,6 +70,11 @@ public class SurvivorMovement : MonoBehaviour {
 
         }
 
+        if ((controller.selectedSurvivor != gameObject) && (isSelected == true) )
+        {
+            isSelected = false;
+            Debug.Log("no longer true");
+        }
        
 
     }
