@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class SurvivorController : MonoBehaviour {
 
-
+    static Animator anim;
     public List<GameObject> listOfSurvivors = new List<GameObject>();
     public GameObject selectedSurvivor;
     private SurvivorMovement selectedMotor; // Used to move the current select
+    private string IsWalking;
 
 
     [SerializeField]
@@ -26,6 +27,8 @@ public class SurvivorController : MonoBehaviour {
 
     // Use this for initialization
     void Awake () {
+
+
         foreach (GameObject item in GameObject.FindGameObjectsWithTag("Survivor"))
         {
             AddSurvivor(item);
@@ -42,11 +45,15 @@ public class SurvivorController : MonoBehaviour {
 
     void Start()
     {
+        anim = GetComponent<Animator>();
+
         // will rotate in relation to the camera's y axis, used to rotate player
         screenMovementSpace = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
 
         //Moving forwards or backwards on the z axis
+       
         screenMovementForward = screenMovementSpace * Vector3.forward;
+      
 
         //moving left or right on the x axis
         screenMovementRight = screenMovementSpace * Vector3.right;
@@ -56,7 +63,7 @@ public class SurvivorController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-
+       
         //for testing to ensure survivors are added to list
         if (Input.GetKeyDown(KeyCode.K))
         {
@@ -92,9 +99,22 @@ public class SurvivorController : MonoBehaviour {
 
         if (selectedSurvivor != null)
         {
-            selectedMotor.movementDirection = Input.GetAxis(Axis_X) * screenMovementRight + Input.GetAxis(Axis_Y) * screenMovementForward;
+            selectedMotor.movementDirection = Input.GetAxis("Horizontal") * screenMovementRight
+                + Input.GetAxis("Vertical") * screenMovementForward;
+
+            if (Input.GetAxis(Axis_X) != 0 || Input.GetAxis(Axis_Y) != 0)
+            {
+                anim.SetBool("IsWalking", true);
+            }
+            else
+            {
+                anim.SetBool("IsWalking", false);
+
+            }
+           
 
         }
+      
 
 
     }
@@ -107,6 +127,7 @@ public class SurvivorController : MonoBehaviour {
 
     }
 
+    
     public void AddSurvivor(GameObject survivorToAdd)
     {
         listOfSurvivors.Add(survivorToAdd);

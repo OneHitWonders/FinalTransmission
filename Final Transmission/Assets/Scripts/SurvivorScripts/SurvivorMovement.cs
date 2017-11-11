@@ -6,8 +6,8 @@ public class SurvivorMovement : MonoBehaviour {
 
     [HideInInspector]
     public Rigidbody survivorBody;
-
     public SurvivorController controller;
+
 
     #region Movement
     //MovementVariables
