@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 112
+  controlID: 11
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -372,33 +372,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Models/Suburban Models/Fences
+    - Assets/Models/Interactive Models/Pickups/Ammo pickup
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models/Suburban Models/Fences
+  - Assets/Models/Interactive Models/Pickups/Ammo pickup
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\noel\Desktop\FinalTransmission\Final Transmission
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 244}
-    m_SelectedIDs: 5a4e0200
-    m_LastClickedID: 151130
-    m_ExpandedIDs: 000000007427000058280000282a00000c2c00005c2c0000f22d0000062e00003e2f0000582f0000aa2f0000b62f000000300000083000004a30000050300000dc300000ee3000000c3100005e310000603100008e320000783b00007a3b00007c3b00007e3b0000803b0000823b0000843b0000863b0000883b00008a3b00008c3b00008e3b0000903b0000923b0000943b0000963b0000983b00009a3b00009c3b00009e3b000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: c62b0000
+    m_LastClickedID: 11206
+    m_ExpandedIDs: 00000000762700005c2800002c2a0000082c0000142c0000642c0000fc2d0000102e0000842e00007c2f0000962f0000e82f0000f42f00003e30000046300000883000008e3000002e310000403100005e310000b0310000b231000052320000e2320000be3b0000c03b0000c23b0000c43b0000c63b0000c83b0000ca3b0000cc3b0000ce3b0000d03b0000d23b0000d43b0000d63b0000d83b0000da3b0000dc3b0000de3b0000e03b0000e23b0000e43b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Lumber Yard
-      m_OriginalName: Lumber Yard
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 11090
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -412,7 +412,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007427000058280000282a00000c2c0000f22d0000062e00007a2e00003e2f0000582f0000aa2f0000b62f00000030000050300000dc300000ee3000005e310000603100008e320000783b00007a3b00007c3b00007e3b0000803b0000823b0000843b0000863b0000883b00008a3b00008c3b00008e3b0000903b0000923b0000943b0000963b0000983b00009a3b00009c3b00009e3b0000
+    m_ExpandedIDs: 00000000762700005c2800002c2a0000142c0000642c0000fc2d0000102e00007c2f0000962f0000e82f0000f42f00003e30000046300000883000008e3000002e310000403100005e310000b0310000b2310000e2320000be3b0000c03b0000c23b0000c43b0000c63b0000c83b0000ca3b0000cc3b0000ce3b0000d03b0000d23b0000d43b0000d63b0000d83b0000da3b0000dc3b0000de3b0000e03b0000e23b0000e43b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -527,24 +527,24 @@ MonoBehaviour:
     width: 399
     height: 552
   m_TreeViewState:
-    scrollPos: {x: 0, y: 793}
+    scrollPos: {x: 0, y: 3465}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ce35f6ff0814f7ff0a14f7ffbc15f7ffa6fbffff00000000445102009c510200d4510200
+    m_ExpandedIDs: c0efffffc2efffffa6fbffff000000003c3500009e35000022370000f037000034380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: TestEnemySpawnPoint
-      m_OriginalName: TestEnemySpawnPoint
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 13692
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -580,14 +580,14 @@ MonoBehaviour:
     width: 960
     height: 552
   m_SceneLighting: 1
-  lastFramingTime: 4961.833520251876
+  lastFramingTime: 1820.885346601314
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.534948, y: 0.13590574, z: 85.76226}
+    m_Target: {x: -166.08942, y: -117.918236, z: 145.33734}
     speed: 2
-    m_Value: {x: 8.534948, y: 0.13590574, z: 85.76226}
+    m_Value: {x: -166.08942, y: -117.918236, z: 145.33734}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -610,13 +610,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.005652633, y: 0.9919838, z: -0.116905876, w: 0.047949668}
+    m_Target: {x: -0.09666298, y: 0.90038854, z: -0.2597462, w: -0.33555904}
     speed: 2
-    m_Value: {x: 0.0056525487, y: 0.991969, z: -0.11690413, w: 0.047948953}
+    m_Value: {x: -0.09665761, y: 0.90033853, z: -0.25973177, w: -0.3355404}
   m_Size:
-    m_Target: 58.89495
+    m_Target: 371.7451
     speed: 2
-    m_Value: 58.89495
+    m_Value: 371.7451
   m_Ortho:
     m_Target: 0
     speed: 2
