@@ -16,8 +16,7 @@ public class SurvivorController : MonoBehaviour {
     [SerializeField]
     private GameObject spawnPoint;
 
-
-    
+   
 
     private Quaternion screenMovementSpace;
     private Vector3 screenMovementForward;
@@ -41,7 +40,7 @@ public class SurvivorController : MonoBehaviour {
             }
 
         };
-     
+        
 	}
 
     void Start()
@@ -73,7 +72,6 @@ public class SurvivorController : MonoBehaviour {
                 Debug.Log(go.name);
             }
         }
-
         if (Input.GetKeyDown(KeyCode.Y)) // for test purpose
         {
             GenerateNewSurvivor();
@@ -92,8 +90,6 @@ public class SurvivorController : MonoBehaviour {
                 {
                     selectedSurvivor = hit.transform.gameObject; // gets the hit Gameobject and sets as selected
                     selectedMotor = selectedSurvivor.GetComponent<SurvivorMovement>();
-
-
                     selectedSurvivor.GetComponent<SurvivorMovement>().isSelected = true;
                     Debug.Log("select");
                 }
